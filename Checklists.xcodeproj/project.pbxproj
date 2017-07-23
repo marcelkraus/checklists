@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DF6616EF1F252EC800FA1942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6616EE1F252EC800FA1942 /* AppDelegate.swift */; };
-		DF6616F11F252EC800FA1942 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6616F01F252EC800FA1942 /* ViewController.swift */; };
+		DF6616F11F252EC800FA1942 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6616F01F252EC800FA1942 /* ChecklistViewController.swift */; };
 		DF6616F41F252EC800FA1942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6616F21F252EC800FA1942 /* Main.storyboard */; };
 		DF6616F61F252EC800FA1942 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF6616F51F252EC800FA1942 /* Assets.xcassets */; };
 		DF6616F91F252EC800FA1942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6616F71F252EC800FA1942 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		DF6616EB1F252EC800FA1942 /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6616EE1F252EC800FA1942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DF6616F01F252EC800FA1942 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF6616F01F252EC800FA1942 /* ChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
 		DF6616F31F252EC800FA1942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF6616F51F252EC800FA1942 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF6616F81F252EC800FA1942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,11 +55,11 @@
 			isa = PBXGroup;
 			children = (
 				DF6616EE1F252EC800FA1942 /* AppDelegate.swift */,
-				DF6616F01F252EC800FA1942 /* ViewController.swift */,
-				DF6616F21F252EC800FA1942 /* Main.storyboard */,
 				DF6616F51F252EC800FA1942 /* Assets.xcassets */,
-				DF6616F71F252EC800FA1942 /* LaunchScreen.storyboard */,
+				DF6616F01F252EC800FA1942 /* ChecklistViewController.swift */,
 				DF6616FA1F252EC800FA1942 /* Info.plist */,
+				DF6616F71F252EC800FA1942 /* LaunchScreen.storyboard */,
+				DF6616F21F252EC800FA1942 /* Main.storyboard */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF6616F11F252EC800FA1942 /* ViewController.swift in Sources */,
+				DF6616F11F252EC800FA1942 /* ChecklistViewController.swift in Sources */,
 				DF6616EF1F252EC800FA1942 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
