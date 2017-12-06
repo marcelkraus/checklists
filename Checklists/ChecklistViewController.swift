@@ -10,6 +10,7 @@ import UIKit
 
 class ChecklistViewController: UITableViewController, ItemDetailViewControllerDelegate {
 
+    var checklist: Checklist!
     var items: [ChecklistItem]
 
     required init?(coder aDecoder: NSCoder) {
@@ -18,6 +19,12 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         super.init(coder: aDecoder)
 
         loadChecklistItems()
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        title = checklist.name
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
