@@ -49,6 +49,12 @@ class DataModel {
         }
     }
 
+    func sortChecklists() {
+        lists.sort(by: { checklist1, checklist2 in
+            return checklist1.name.localizedStandardCompare(checklist2.name) == .orderedAscending
+        })
+    }
+
     func documentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
 
@@ -72,6 +78,7 @@ class DataModel {
             let unarchiver = NSKeyedUnarchiver(forReadingWith: data)
             lists = unarchiver.decodeObject(forKey: "Checklists") as! [Checklist]
             unarchiver.finishDecoding()
+            sortChecklists()
         }
     }
 
