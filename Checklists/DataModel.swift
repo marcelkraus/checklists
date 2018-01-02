@@ -28,6 +28,7 @@ class DataModel {
 
     func registerDefaults() {
         let dictionary: [String: Any] = [
+            "ChecklistItemID": 0,
             "ChecklistIndex": -1,
             "FirstTime": true,
         ]
@@ -80,6 +81,14 @@ class DataModel {
             unarchiver.finishDecoding()
             sortChecklists()
         }
+    }
+
+    class func nextChecklistItemID() -> Int {
+        let userDefaults = UserDefaults.standard
+        let itemID = userDefaults.integer(forKey: "ChecklistItemID")
+        userDefaults.set(itemID + 1, forKey: "ChecklistItemID")
+        userDefaults.synchronize()
+        return itemID
     }
 
 }
